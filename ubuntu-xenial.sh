@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-    hostname ejbca;
+    hostname wcipa.oonglobal.com;
     apt-get update ;
     apt-get -y install  openjdk-8-jre-headless ca-certificates-java;
     apt-get -y install openjdk-8-jdk ant ant-optional unzip postgresql-9.5 postgresql-client-9.5 unzip;    
@@ -24,7 +24,7 @@
     service jboss start;
 #EJBCA
 sudo -u postgres psql -U postgres <<OMG
- CREATE USER ejbca WITH PASSWORD 'ejbca';
- CREATE DATABASE ejbca WITH OWNER ejbca ENCODING 'UTF8' ;
+ CREATE USER admin_ejbca WITH PASSWORD 'admin_ejbca';
+ CREATE DATABASE admin_ejbca WITH OWNER admin_ejbca ENCODING 'UTF8' ;
 OMG
 
